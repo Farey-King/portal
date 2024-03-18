@@ -1,0 +1,372 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="static/assets/https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/assets/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="static/assets/css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/assets/css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="static/assets/css/reg.css">
+
+    <title>course registration</title>
+  </head>
+  <body>
+  
+
+  <div class="content">
+    
+    <div class="container">
+      <h2 class="mb-5">Welcome    ,Register your courses for the session</h2>
+      
+
+      <div class="table-responsive custom-table-responsive">
+        <form action="registration" method="POST">
+          {% csrf_token %}
+        <table class="table custom-table">
+          <thead >
+            <tr>  
+
+              
+              
+              <th scope="col">S/N</th>
+              <th scope="col">COURSE CODE</th>
+              <th scope="col">COURSE TITLE</th>
+              <th scope="col">CREDIT UNIT</th>
+              <th scope="col">
+                <!-- <label class="control--checkbox">
+                  <input type="checkbox"  class="js-check-all"/>
+                  <div class="control__indicator"></div>
+                </label> -->
+              </th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr scope="row">
+             
+              <td >
+                01
+              </td>
+              <td name="course_code" ><a href="#">BIO 117</a></td>
+              <td name="course_title" >
+                Biology Practical
+                <small class="d-block"></small>
+              </td>
+              <td name="credit_unit" >2</td>
+              <td></td>
+              <th scope="row">
+                <label class=" control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+            </tr>
+            <tr class="spacer"><td colspan="100"></td></tr>
+            <tr scope="row">
+             
+              <td>
+                02
+              </td>
+              <td name="course_code1"><a href="#">PHY 117</a></td>
+              <td name="course_title1">
+                Physics Practical
+                <small class="d-block"></small>
+              </td>
+              <td name="credit_unit">2</td>
+              <td></td>
+              <th scope="row">
+                <label class=" control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+            </tr>
+            <tr class="spacer"><td colspan="100"></td></tr>
+            <tr>
+              <td>
+                03
+              </td>
+              <td name="course_code2"><a href="#">MTH 111</a></td>
+              <td name="course_title2">
+                Introduction to Mathematics
+                <small class="d-block"></small>
+              </td>
+              <td name="credit_unit2">3</td>
+              <td></td>
+              <th scope="row">
+                <label class=" control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+            </tr>
+            <tr class="spacer"><td colspan="100"></td></tr>
+            <tr>
+              <td>
+                04
+              </td>
+              <td name="course_code3"><a href="#">BIO 111</a></td>
+              <td name="course_title3">
+                Introduction to Biology
+                <small class="d-block"></small>
+              </td>
+              <td name="credit_unit3"> 3</td>
+              <td></td>
+              <th scope="row">
+                <label class=" control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+            </tr>
+            <tr class="spacer"><td colspan="100"></td></tr>
+            <tr>
+              <td>
+                05
+              </td>
+              <td name="course_code4"><a href="#">PHY 111</a></td>
+              <td name="course_title4">
+                Introduction to Physics
+                <small class="d-block"></small>
+              </td>
+              <td name="credit_unit4">3</td>
+              <td></td>
+              <th scope="row">
+                <label class=" control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+            </tr>
+            <tr class="spacer"><td colspan="100"></td></tr>
+            <tr>
+              <td>
+                06
+              </td>
+              <td name="course_code5"><a href="#">CHEM 111</a></td>
+              <td name="course_title5">
+                Introduction to Chemistry
+                <small class="d-block"></small>
+              </td>
+              <td name="credit_unit5">3</td>
+              <td></td>
+              <th scope="row">
+                <label class=" control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+            </tr>
+            <tr class="spacer"><td colspan="100"></td></tr>
+            <tr>
+              <td>
+                07
+              </td>
+              <td name="course_code6"><a href="#">GST 111</a></td>
+              <td name="course_title6">
+                Introduction to General Studies
+                <small class="d-block"></small>
+              </td>
+              <td name="credit_unit6">3</td>
+              <td></td>
+              <th scope="row">
+                <label class=" control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+            </tr>
+            
+            </div>
+          </tbody>
+        </table>
+      </form>
+      </div>
+      <div class="table-responsive custom-table-responsive">
+        <form action="registration" method="POST">
+          {% csrf_token %}
+ 
+
+        <table class="table custom-table">
+          <thead >
+            <tr>  
+
+              
+              
+              <th scope="col">S/N</th>
+              <th scope="col">COURSE CODE</th>
+              <th scope="col">COURSE TITLE</th>
+              <th scope="col">CREDIT UNIT</th>
+              <th scope="col">
+                <!-- <label class="control--checkbox">
+                  <input type="checkbox"  class="js-check-all"/>
+                  <div class="control__indicator"></div>
+                </label> -->
+              </th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr scope="row">
+             
+              <td>
+                01
+              </td>
+              <td name="course_code001"><a href="#">MTH 121</a></td>
+              <td name="course_title001">
+                Elementary Algebra II
+                <small class="d-block"></small>
+              </td>
+              <td name="credit_unit001">2</td>
+              <td></td>
+              <th scope="row">
+                <label class=" control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+            </tr>
+            <tr class="spacer"><td colspan="100"></td></tr>
+            <tr scope="row">
+             
+              <td>
+                02
+              </td>
+              <td name="course_code002"><a href="#">MTH 122</a></td>
+              <td name="course_title002">
+                Calculus II
+                <small class="d-block"></small>
+              </td>
+              <td name="credit_unit002">2</td>
+              <td></td>
+              <th scope="row">
+                <label class=" control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+            </tr>
+            <tr class="spacer"><td colspan="100"></td></tr>
+            <tr>
+              <td>
+                03
+              </td>
+              <td name="course_code003"><a href="#">PHY 124</a></td>
+              <td name="course_title003">
+                Introduction to Electric & Magnetism
+                <small class="d-block"></small>
+              </td>
+              <td name="credit_unit003">3</td>
+              <td></td>
+              <th scope="row">
+                <label class=" control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+            </tr>
+            <tr class="spacer"><td colspan="100"></td></tr>
+            <tr>
+              <td>
+                04
+              </td>
+              <td name="course_code004"><a href="#">PHY 127</a></td>
+              <td name="course_title4">
+                Experimental Physics II
+                <small class="d-block"></small>
+              </td>
+              <td name="credit_unit004">3</td>
+              <td></td>
+              <th scope="row">
+                <label class=" control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+            </tr>
+            <tr class="spacer"><td colspan="100"></td></tr>
+            <tr>
+              <td>
+                05
+              </td>
+              <td name="course_code005"><a href="#">CSC 121</a></td>
+              <td name="course_title005">
+                Introduction TO Problem Solving
+                <small class="d-block"></small>
+              </td>
+              <td name="credit_unit005">3</td>
+              <td></td>
+              <th scope="row">
+                <label class=" control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+            </tr>
+            <tr class="spacer"><td colspan="100"></td></tr>
+            <tr>
+              <td>
+                06
+              </td>
+              <td name="course_code006"><a href="#">STA 121</a></td>
+              <td name="course_title006">
+                Descriptive Statistics
+                <small class="d-block"></small>
+              </td>
+              <td name="crdit_unit006">3</td>
+              <td></td>
+              <th scope="row">
+                <label class=" control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+            </tr>
+            <tr class="spacer"><td colspan="100"></td></tr>
+            <tr>
+              <td>
+                07
+              </td>
+              <td name="course_code007"><a href="#">GST 121</a></td>
+              <td name="course_title007">
+                Use of Library
+                <small class="d-block"></small>
+              </td>
+              <td name="credit_unit007">3</td>
+              <td></td>
+              <th scope="row">
+                <label class=" control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+            </tr>
+          </div>
+        </div>
+        
+          </tbody>
+          
+        </table>
+        <button type="submit" onclick="alert('submitted successfully')" style="background-color: aqua;">
+          SUBMIT</button>
+      </form>
+      
+        
+    
+ 
+    
+    
+
+    <script src="stattic/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="static/assets/js/popper.min.js"></script>
+    <script src="static/assets/js/bootstrap.min.js"></script>
+    <script src="static/assets/js/main.js"></script>
+  </body>
+</html>
